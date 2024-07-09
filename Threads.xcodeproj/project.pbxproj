@@ -34,6 +34,9 @@
 		AF897BB22C3C432000C9203F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF897BB12C3C432000C9203F /* AuthService.swift */; };
 		AF897BB62C3C483A00C9203F /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF897BB52C3C483900C9203F /* ContentViewModel.swift */; };
 		AF897BB82C3C4B9500C9203F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF897BB72C3C4B9500C9203F /* LoginViewModel.swift */; };
+		AF897BBA2C3CE7A300C9203F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF897BB92C3CE7A300C9203F /* User.swift */; };
+		AF897BBC2C3CE98800C9203F /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF897BBB2C3CE98800C9203F /* UserService.swift */; };
+		AF897BBF2C3CEA5B00C9203F /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF897BBE2C3CEA5B00C9203F /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +64,9 @@
 		AF897BB12C3C432000C9203F /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		AF897BB52C3C483900C9203F /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		AF897BB72C3C4B9500C9203F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		AF897BB92C3CE7A300C9203F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AF897BBB2C3CE98800C9203F /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		AF897BBE2C3CEA5B00C9203F /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +135,7 @@
 		AF5B1B392C3AF00A00E5C4A5 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				AF897BBB2C3CE98800C9203F /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -136,6 +143,7 @@
 		AF5B1B3B2C3AF01500E5C4A5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AF897BB92C3CE7A300C9203F /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -259,6 +267,7 @@
 		AF897B8E2C3B026100C9203F /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				AF897BBD2C3CEA4C00C9203F /* ViewModel */,
 				AF897B9E2C3C34C900C9203F /* EditProfile */,
 				AF897B9B2C3C2F1A00C9203F /* Model */,
 				AF897B8F2C3B026600C9203F /* View */,
@@ -364,6 +373,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		AF897BBD2C3CEA4C00C9203F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AF897BBE2C3CEA5B00C9203F /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -450,6 +467,7 @@
 				AF897BB22C3C432000C9203F /* AuthService.swift in Sources */,
 				AF897BA12C3C34E400C9203F /* EditProfileView.swift in Sources */,
 				AF5B1B2D2C3AEF3700E5C4A5 /* ContentView.swift in Sources */,
+				AF897BBC2C3CE98800C9203F /* UserService.swift in Sources */,
 				AF897B942C3B03F400C9203F /* ThreadCell.swift in Sources */,
 				AF897B872C3B020C00C9203F /* ActivityView.swift in Sources */,
 				AF897BB82C3C4B9500C9203F /* LoginViewModel.swift in Sources */,
@@ -458,12 +476,14 @@
 				AF897B852C3B01F600C9203F /* ThreadCreation.swift in Sources */,
 				AF897B9D2C3C2F2700C9203F /* ProfileThreadFilter.swift in Sources */,
 				AF897BB62C3C483A00C9203F /* ContentViewModel.swift in Sources */,
+				AF897BBF2C3CEA5B00C9203F /* ProfileViewModel.swift in Sources */,
 				AF897B7D2C3B000500C9203F /* ThreadsTabView.swift in Sources */,
 				AF897B792C3AFE7700C9203F /* ThreadsTextFieldModifier.swift in Sources */,
 				AF5B1B2B2C3AEF3700E5C4A5 /* ThreadsApp.swift in Sources */,
 				AF897B832C3B01B200C9203F /* ExploreView.swift in Sources */,
 				AF897B8A2C3B023100C9203F /* ProfileView.swift in Sources */,
 				AF897B762C3AFD3900C9203F /* RegistrationView.swift in Sources */,
+				AF897BBA2C3CE7A300C9203F /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
